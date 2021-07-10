@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=VT323&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@
   background-color: rgba(0, 0, 0, 0.767);
   color: white;
   font-size: 13vw;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   text-align: center;
   animation: fadeinout 5s linear forwards;
   opacity: 1;
@@ -23,53 +23,67 @@
   overflow: hidden;
 }
 
-
 @keyframes fadeinout {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
+/* #######  WOF  ######### */
 
-
-/* #######  STAT CARD  ######### */
-
-.stats-container {
-  margin: 10px;
-  width: 50%;
-  background-color: rgba(134, 134, 231, 0.801);
-}
-
-.top-bar {
-  border: 1px solid black;
-}
-.main-bar {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+.phrase-container {
+  margin: auto;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center
-}
-.player-img {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-.player-img img {
-  width: 100px;
-  border-radius: 50%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding-bottom: 100px;
+  width: 90%;
+  border-radius: 25px;
 }
 
-.stats{
+.underline .letter {
+  /* width: 100%; */
+  /* height: 100vh; */
+  color: white;
+  opacity: 0;
+  margin: 0 5px 0 5px;
+  font-size: 5vw;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+}
+.word {
   display: flex;
 }
-.stats ul {
-  font-family: 'VT323', monospace;
-  list-style-type: none;
-  line-height: 30px;
-  margin-right: 140px;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: .2rem;
+.underline {
+  width: 5vw;
+  margin: 0 5px 0 5px;
+
+  /* background-color: bisque; */
+  border-bottom: 5px solid rgb(255, 255, 255);
+  height: 5.4vw;
 }
+.space {
+  margin: 0 30px 0 30px;
+}
+
+/* #######  QUEUE  ######### */
+.queue-background {
+  background-color: rgba(0, 0, 0, 0.582)
+}
+.queue-container {
+  height: 100vh;
+  font-size: 5vw;
+  color: white
+}
+.queue-container h2 {
+  text-decoration: underline;
+}
+
